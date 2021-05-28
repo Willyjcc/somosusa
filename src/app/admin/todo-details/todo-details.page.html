@@ -1,0 +1,98 @@
+<ion-content padding>
+  <ion-header class="lala">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="white-text text-center">{{todo.task}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full" style="background-color: #000;">
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md>
+          <div *ngIf="urlImage | async; else btnDisabled" class="white-text"> Imagen Actualizada </div>
+          <ng-template #btnDisabled>
+            <h5 class="white-text">Imagen Actual 600 x 599</h5>
+          </ng-template>
+          <br>
+          <img *ngIf="todo.img" src="{{todo.img}}" width="100%" style="max-width:480px;">
+          <ion-card *ngIf="todo.img == '' " class="fucsia" style="max-width:480px;">
+            <ion-card-content>
+              <img src="/assets/img/preview.png" width="100%">
+            </ion-card-content>  
+          </ion-card>
+          <h5 class="white-text">Seleccionar image:</h5>
+          <input type="file" accept=".png, .jpg" (change)="onUpload($event)">
+          <input id="imagen" type="hidden" [(ngModel)]="todo.img" [value]="urlImage | async">
+        
+        </ion-col>
+        <ion-col size="12" size-md>
+          <ion-grid>
+            <ion-row>
+              <b class="white-text">|</b>
+              <ion-col size="12" size-md>
+                  <ion-item *ngIf="todo">
+                  <ion-label>Fecha:</ion-label>
+                  <ion-datetime displayFormat="DD MMM" placeholder="Select Date" [(ngModel)]="todo.date"></ion-datetime>
+                </ion-item>
+              </ion-col>
+              <b class="white-text">|</b>
+              <ion-col size="12" size-md>
+                <ion-item>
+                  <ion-label>Hora:</ion-label>
+                  <ion-datetime displayFormat="h:mm a" [(ngModel)]="todo.hour"></ion-datetime>
+                </ion-item>
+              </ion-col>
+              <b class="white-text">|</b>
+              <ion-col size="12" size-md>
+                <ion-item *ngIf="todo">
+                  <ion-label>Lugar:</ion-label>
+                  <ion-input required type="text" placeholder="DIRECCION" [(ngModel)]="todo.direction"></ion-input>
+                </ion-item>
+              </ion-col>
+              <b class="white-text">|</b>
+            </ion-row>
+          </ion-grid>
+
+
+
+
+
+
+          <ion-item *ngIf="todo">
+            <ion-input required type="text" placeholder="TITULO" [(ngModel)]="todo.task"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="todo">
+            <ion-textarea style="color:#fff;" placeholder="DESCRIPCION" [(ngModel)]="todo.description" required></ion-textarea>
+          </ion-item>
+          
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+
+
+  
+    <img src="/assets/img/franja-derecha.svg" class="franja-derecha" alt="Franja Derecha"/>
+    <img src="/assets/img/franja-izquierda.svg" class="franja-izquierda" alt="Franja Izquierda"/>
+
+
+    <!-- <ion-item *ngIf="todo">
+      <ion-input required type="number" placeholder="Priority" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item> -->
+  </ion-list>
+  <div class="text-center">
+    <b class="white-text">|</b>
+    &nbsp; 
+    <ion-button class="boton-leer" (click)="saveTodo()">PUBLICAR</ion-button>
+    &nbsp;
+    <b class="white-text">|</b>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+    <ion-fab-button color="danger" (click)="onRemoveTodo(todoId)" routerLink="/dashboard" routerDirection="forward">
+        <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,20 @@
+ion-content{
+    --background:#000;
+}
+ion-header ion-toolbar .sc-ion-buttons-md-s .button, ion-header ion-toolbar .sc-ion-buttons-ios-s .button, .header-ios ion-toolbar .sc-ion-buttons-md-s .button, .header-ios ion-toolbar .sc-ion-buttons-ios-s .button {
+    --background-hover: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    margin-top: 0;
+    font-size: 40px;
+}
+ion-input, h5{
+    --color:#fff;
+}
+ion-item, ion-textarea{
+    --background: transparent;
+    color:#fff;
+}
+ion-label{
+    color:#cc0083 !important;
+    font-weight: bold;
+}

@@ -1,0 +1,170 @@
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+//Willyjcc
+.container-general{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+.icon-menu-movil{
+    display: none;
+}
+.menus{
+    min-width: 0px !important;
+    max-width: 0% !important;
+}
+.menu-pc{
+    height: 150px;
+}
+.logo{
+    position: absolute;
+    top: -5px;
+	width: 100px;
+}
+.logo-movil{
+    display: none;
+    width: 100px;
+    margin-left: 75px;
+}
+.icon-social{
+    width: 35px;
+}
+.franja-derecha{
+    position:absolute;
+    top:-1200px;
+    right:-40%;
+}
+.franja-izquierda{
+    position:absolute;
+    left:-50%;
+}
+.banner{
+    h2{
+        position: relative;
+        font-size: 16vw;
+        margin: -160px auto;
+        top: 280px;
+    }
+    img{
+        position:relative;
+        z-index: 10;
+    }
+}
+.directores-area{
+    h2{
+        font-size: 2.5rem;
+        line-height: 40px !important;
+        margin-top: 20%;
+    }
+    h4{
+        color:gray;
+    }
+}
+.directores{
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    width: 100%;
+}
+hr{ 
+    border: none;
+    border-left: 2px solid #fff;
+    height: 85%;
+    margin-top: 25px;     
+}
+.fondo-eventos{
+    position: absolute;
+    width: 50%;
+    right: 25%;
+    opacity: 0.5;
+}
+.bordes-redondos{
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+}
+.boton-leer{
+    --background:transparent;
+    border: 1px solid #fff;
+}
+@media only screen and (max-width : 1440px){
+    .banner{
+        h2{
+            margin: -110px auto;
+        }
+    }
+}
+@media only screen and (max-width : 1024px){
+    .franja-derecha {
+        top: -500px;
+        right: -50%;
+    }
+    .banner h2 {
+        margin: -90px auto;
+        top: 320px;
+    }
+}
+@media only screen and (max-width : 992px){
+    .icon-social{
+        position: relative;
+        top: 5px;
+        width: 30px;
+    }
+    .banner h2 {
+        margin: -70px auto;
+    }
+}
+@media only screen and (max-width : 767px){
+    .icon-menu-movil{
+        display: initial;
+    }
+    .menus{
+        max-width: 100% !important;
+    }   
+    .menu-pc{
+        display: none;
+    }
+    .logo-movil{
+        display: initial;
+    }
+    .banner h2 {
+        margin: -45px auto;
+    }
+}
+@media only screen and (max-width : 600px){
+    .banner h2 {
+        margin: -20px auto;
+        top: 250px;
+    }
+    ion-toolbar.in-toolbar .sc-ion-buttons-ios-h, ion-toolbar.in-toolbar .ion-title-ios {
+        margin-top: 20px;
+    }
+    .title-ios{
+        height: 125px;
+        .logo-movil{
+            height: 1000px;
+            width: 60px;
+            margin-top: -40px;
+            margin-left: 0;    
+        }
+    }
+}
+@media only screen and (max-width : 480px){
+    .banner h2 {
+        margin: 0 auto;
+        top: 250px;
+    }
+}

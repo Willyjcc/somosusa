@@ -1,0 +1,275 @@
+<ion-content [scrollEvents]="true">
+  <div class="sticky">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons class="icon-menu-movil" slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-grid class="menu-pc">
+        <ion-row>
+          <ion-col size="2">
+            <a href="/home"><img src="/assets/img/logo.svg" class="logo" alt="SomosUSA"/></a>
+          </ion-col>
+          <ion-col size="8">
+            <h2 class="text-center">
+              | <a (click)="scrollTo('section1')">Inicio</a> |
+              <a (click)="scrollTo('section2')">Sobre nosotros</a> |
+              <a (click)="scrollTo('section3')">Clases</a> |
+              <a (click)="scrollTo('section4')">Eventos</a> |
+              <a (click)="scrollTo('section5')">Contacto</a> |
+            </h2>
+          </ion-col>
+          <ion-col size="2">
+            <h2 class="text-right">
+              <a><img src="/assets/img/icons/facebook.svg" class="icon-social" alt="Facebook"/></a>
+              <a><img src="/assets/img/icons/instagram.svg" class="icon-social" alt="Instagram"/></a>
+            </h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-title class="text-center">
+        <img src="/assets/img/logo.svg" class="logo-movil" alt="SomosUSA"/>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  </div>
+  
+  <img src="/assets/img/franja-derecha.svg" class="franja-derecha" alt="Franja Derecha"/>
+  <img src="/assets/img/franja-izquierda.svg" class="franja-izquierda" alt="Franja Izquierda"/>
+  <br><br><br><br>
+  <div id="section1" class="banner text-center">
+    <h2 class="white-text bold">MARINERA</h2>
+    <img src="/assets/img/banner-pareja.png" alt="Pareja"/>
+  </div>
+
+  <div id="section2" class="container-general">
+    <br><br><br><br>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md>
+          <h2 class="fucsia-text">Sombre Nosotros</h2>
+          <h5 class="text-justify white-text">
+              Somos Usa es una academia formada en el mes de Agosto 2019 creada por dos amantes del baila como lo es Jenner interesado por el baile marinera a sus 9 años desde su ciudad de origen Chiclayo, Perú y Liliana que desde los 10 años ha disfrutado esta danza tradicional desde la capital Lima, Perú. Luego de retirarse por algún tiempo, volvieron en el año 2013 y esta vez para despertar en otros la pasión por el baile en su nueva casa Florida USA y así es como nace nuestra
+              <br><br>
+              Academia Somos Usa.
+              
+          </h5>
+        </ion-col>
+        <ion-col class="text-center" size="12" size-md>
+          <img src="/assets/img/pareja2.png" width="100%" style="margin-top:-50px;" alt="Pareja 2"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="text-center">
+          <h2 class="fucsia-text">Directores</h2>
+        </ion-col>
+        <ion-col size="12" size-md class="directores-area">
+          <ion-row>
+            <ion-col size="12" size-md>    
+              <img src="/assets/img/grace-watts.png" class="directores" alt="Grace Watts"/>
+            </ion-col>
+            <ion-col size="12" size-md>    
+              <h2 class="white-text">GRACE<br> WATTS</h2>
+              <h4 class="white-text">Directora</h4>
+              <a><img src="/assets/img/icons/facebook.svg" class="icon-social" alt="Facebook"/></a>
+              <a><img src="/assets/img/icons/instagram.svg" class="icon-social" alt="Instagram"/></a>
+            </ion-col>
+          </ion-row>
+          
+        </ion-col>
+        <ion-col size="12" size-md class="directores-area">
+          <ion-row>
+            <ion-col size="12" size-md>    
+              <img src="/assets/img/jordan-white.png" class="directores" alt="Jordan White"/>
+            </ion-col>
+            <ion-col size="12" size-md>    
+              <h2 class="white-text">JORDAN<br> WHITE</h2>
+              <h4 class="white-text">Profesor</h4>
+              <a><img src="/assets/img/icons/facebook.svg" class="icon-social" alt="Facebook"/></a>
+              <a><img src="/assets/img/icons/instagram.svg" class="icon-social" alt="Instagram"/></a>
+            </ion-col>
+          </ion-row>
+
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
+  </div>
+  
+  <br><br><br><br>
+
+  <div id="section3" style="background-color: #cc008347;">
+    <br><br>
+    <div class="container-general">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="text-center">
+            <h2 class="white-text">Clases de Baile</h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" size-md>
+            <h2 class="fucsia-claro-text">Clases Privada</h2>
+            <h5 class="text-justify white-text">
+              Las clases privadas son una excelente alternativa a la hora de aprender a bailar. La atención personal te permitirá saber dónde están tus errores y cómo solucionarlos. Tu instructor será capaz de identificar los problemas y centrarse específicamente en las áreas que necesitan mejorar. Esto es especialmente crítico para la técnica aplicada a cada movimiento.
+
+            </h5>
+          </ion-col>
+          <ion-col style="max-width:50px;">
+            <hr>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <h2 class="fucsia-claro-text">Clases en Grupo</h2>
+            <h5 class="text-justify white-text">
+              Durante milenios, los bailarines utilizaban este arte para comunicarse e incrementar la cohesión social en el seno de un grupo cultural. Es por ello que hoy en día, los coreógrafos transmiten esta cultura del baile grupal a sus alumnos para poder unificar y tener el control de todo el grupo además de ser divertido compartir con todos tus compañeros.
+
+            </h5>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" size-md>
+            <h2 class="fucsia-claro-text">Entretenimiento para Niños</h2>
+            <h5 class="text-justify white-text">
+              A los niños, desde muy pequeñitos, les encanta bailar. Es escuchar música y ponerse a bailar, enseguida su cuerpo empieza a moverse. El baile es una actividad que debemos fomentar porque les beneficia, tanto desde el punto de vista físico como psíquico. Así que ellos también son bienvenidos a nuestra academia.
+            </h5>
+          </ion-col>
+          <ion-col style="max-width:50px;">
+            <hr>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <h2 class="fucsia-claro-text">Eventos Corporativo</h2>
+            <h5 class="text-justify white-text">
+              Participamos en eventos, si amas el baile marinera y quieres que participemos podemos hacerlo incluyendo corporativos, ferias, congresos, espectáculos privados, fiestas, shows, posibilidad de crear coreografías interactivas. Creamos y adaptamos espectáculos de baile en función a lo que necesites.
+
+            </h5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <br><br>
+  </div>
+  
+  <br><br>
+  <div *ngFor="let todo of todos">
+    <div id="openModal{{todo.id}}" class="modalDialog">
+      <div>
+        <a href="/home#close" title="Close" class="close">X</a>
+        <h2 class="text-center fucsia-text">{{todo.task}}</h2>
+        <div  style="max-width:769px;margin:0 auto;">
+          <h5 class="text-justify white-text">
+            <ion-textarea class="textatea-modal" disabled value="{{todo.description}}"></ion-textarea>
+          </h5>
+          <h4 class="white-text">
+            <b class="fucsia-text">Fecha:</b> {{todo.date | date: "dd MMMM" }}
+            <br>
+            <b class="fucsia-text">Hora:</b> {{todo.hour | date: "h:mm a" }} 
+            <br>
+            <b class="fucsia-text">Dirección:</b> {{todo.direction}}
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section4" class="container-general">
+    <br><br>
+    <img src="/assets/img/eventos.png" class="fondo-eventos" alt="Eventos"/>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="text-center">
+          <h2 class="white-text">Eventos</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-slides pager="true" [options]="slideOpts">
+            
+            <ion-slide *ngFor="let todo of todos">
+              <ion-row>
+                <ion-col size="12" size-md>
+                  <h2 class="fucsia-text bold">{{todo.date | date: "dd MMM" }}.</h2>
+                  <img src="{{todo.img}}" class="bordes-redondos" width="200px" alt="Grace Watts"/>
+                </ion-col>
+                <ion-col size="12" size-md>
+                  <br><br>
+                  <h2 class="fucsia-text bold">{{todo.task}}</h2>
+                  <ion-textarea disabled value="{{todo.description}}"></ion-textarea>
+                  <br><br>
+                  <a href="/home#openModal{{todo.id}}" class="white-text">| <ion-button class="boton-leer">leer más</ion-button> |</a>
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+            
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br>
+  </div>
+
+  <br><br><br><br>
+
+  <div id="section5" style="background-color: #cc008347;">
+    <br><br>
+    <div class="container-general">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2 class="white-text text-center">Contacto</h2>
+            <br><br>
+            <h5 class="white-text text-justify" style="max-width:600px;margin:0 auto;">
+              Si necesitas contactarte con nosotros puedes hacerlos a través de nuestros números teléfonicos, dirección y correo. Estaremos encantados de responder cualquier duda. 
+
+            </h5>
+          </ion-col>
+        </ion-row>
+        <ion-row class="text-center">
+          <ion-col size="12" size-md>
+            <img src="/assets/img/icons/ubicacion.svg" width="30%" alt="Grace Watts"/>
+            <h3 class="white-text">lorem inpsu</h3>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <img src="/assets/img/icons/correo.svg" width="30%" alt="Grace Watts"/>
+            <h3 class="white-text">SomosUsa@gmail.com</h3>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <img src="/assets/img/icons/whatsapp.svg" width="30%" alt="Grace Watts"/>
+            <h3 class="white-text">lorem inpsu</h3>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <div class="container-general">
+    <br><br>
+    <ion-grid>
+      <ion-row class="text-center">
+        <ion-col>
+          <img src="/assets/img/logo.svg" width="100px" alt="SomosUSA"/>
+          <h5 class="text-center white-text">
+            | <a (click)="scrollTo('section1')" class="white-text">Inicio</a> |
+            <a (click)="scrollTo('section2')" class="white-text">Sobre nosotros</a> |
+            <a (click)="scrollTo('section3')" class="white-text">Clases</a> |
+            <a (click)="scrollTo('section4')" class="white-text">Eventos</a> |
+            <a (click)="scrollTo('section5')" class="white-text">Contacto</a> |
+          </h5>
+          <a><img src="/assets/img/icons/facebook.svg" class="icon-social" alt="Facebook"/></a>
+          &nbsp; 
+          <a><img src="/assets/img/icons/instagram.svg" class="icon-social" alt="Instagram"/></a>
+          <h5 class="white-text">
+            © 2025. Developed by <a href="https://tagastudios.com/" target="_blank" class="white-text">TAGA STUDIOS</a>  
+          </h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br>
+  </div>
+
+</ion-content>
